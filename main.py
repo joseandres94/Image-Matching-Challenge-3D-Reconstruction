@@ -48,6 +48,7 @@ def main():
     # Loading train data
     train_labels_file, train_thresholds_file=load_train_files(config)
 
+    
     # -------------------------------------------------
     # 3. DATA PREPROCESSING
     # -------------------------------------------------
@@ -78,6 +79,7 @@ def main():
     # Extraction of max and 95-percentiles values from quaternions and translation vectors
     stats=statistics_from_data(train_labels_file)
 
+    
     # -------------------------------------------------
     # 4. SPLIT DATA (TRAIN/VALID)
     # -------------------------------------------------
